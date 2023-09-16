@@ -1,0 +1,26 @@
+.CardItem {
+    background-color: rgb(101, 119, 225);
+    display: grid;
+    border-radius: 45px;
+    max-width: 350px;
+    max-height: 1000px;
+    text-align: center;
+}
+
+Link {
+    color: brown;
+}
+
+.ItemHeader {
+    color: black;
+    text-align: center;
+}
+
+.Info {
+    color: black;
+    font-weight: bold;
+}
+
+.ItemFooter {
+    height: 45px;
+}

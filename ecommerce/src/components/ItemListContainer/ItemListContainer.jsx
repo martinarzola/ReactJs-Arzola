@@ -10,6 +10,7 @@ const ItemListContainer = ({ greeting }) => {
     
     useEffect(() => {
         const asyncFunc = categoryId ? getProductsByCategory : getProducts
+        
         asyncFunc(categoryId)
             .then(response => {
                 setProducts(response)
@@ -22,7 +23,7 @@ const ItemListContainer = ({ greeting }) => {
     return (
         <div>
             <h1>{greeting}</h1>
-            <ItemList products={products}/>
+            <ItemList products={products} />
         </div>
     )
 }

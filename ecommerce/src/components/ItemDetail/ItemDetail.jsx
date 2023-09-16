@@ -3,7 +3,7 @@ import ItemCount from '../ItemCount/ItemCount'
 
 const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
     return (
-        <article className='CardItem'>
+        <article className='CardItemD'>
             <header className='Header'>
                 <h2 className='ItemHeader'>
                     {name}
@@ -23,8 +23,8 @@ const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
                     Precio: ${price}
                 </p>
             </section>
-            <footer className='ItemFootes'>
-                <ItemCount initial={1} stock={stock} onAdd={(quantity) => console.log('Agregado.')}/>
+            <footer className='ItemFooter'>
+                <ItemCount initial={0} stock={stock} onAdd={(quantity) => console.log('Agregado.')}/>
             </footer>
         </article>
     )

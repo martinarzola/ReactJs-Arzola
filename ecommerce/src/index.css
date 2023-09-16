@@ -14,63 +14,135 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
+#root {
+  width: 1200px;
+}
+
+.Categories {
+  height: 45px;
   color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  text-decoration: none;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 2.2em;
-  line-height: 1.1;
-}
-
-button {
+.ActiveOption {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 4px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #40212f;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+
+body {
+  background-color: rgb(160, 216, 211);
+  margin: 0;
+  display: flex;
+  min-width: 920px;
+  min-height: 400vh;
+}
+
+#Title {
+  font-size: 2.2em;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.ListGroup {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.Option {
+  border-radius: 8px;
+  border: 4px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #40212f;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.Option:hover {
   border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.CardItem {
+  max-height: 580px;
 }
 
-
-
+.ItemImg {
+  max-width: 280px;
+  max-height: 300px;
+}
 
 .cart-img {
   height: 30px;
   width: auto;
 }
+
+.cart-info {
+  color: black;
+}
+
+
+.ItemDetailContainer {
+  display: flex;
+}
+
+.CardItemD {
+  background-color: rgb(101, 119, 225);
+  display: flex;
+  border-radius: 45px;
+  max-width: 1200px;
+  max-height: 1000px;
+  text-align: center;
+}
+
+
+.CardItemD header {
+  font-size: 20px;
+}
+
+.CardItemD section {
+  font-size: 24px;
+}
+
+.CardItemD footer {
+  font-size: 28px;
+}
+
+#ButtonMenos {
+  background-color: #946f80;
+  height: 45px;
+  width: 45px;
+  font-size: 28px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#ButtonMas {
+  background-color: #946f80;
+  height: 45px;
+  width: 45px;
+  font-size: 28px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#ButtonAgregar {
+  background-color: #946f80;
+  font-size: 24px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
