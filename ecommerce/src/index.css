@@ -76,6 +76,10 @@ body {
   
 }
 
+.greeting {
+  color: #242421;
+}
+
 .CardItem {
   max-height: 580px;
 }
@@ -86,7 +90,7 @@ body {
 }
 
 .cart-img {
-  height: 30px;
+  height: 45px;
   width: auto;
 }
 
@@ -146,3 +150,28 @@ body {
   cursor: pointer;
 }
 
+.noHay {
+  color: #242421;
+}
+
+.notFound {
+  color: #242421;
+}
+
+.total {
+  color: #242421;
+}
+
+.orden {
+  color: #242421;
+}
+
+.CartWidget {
+  color: #242421;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.Label {
+  color: #242421;
+}
