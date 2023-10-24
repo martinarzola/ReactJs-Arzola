@@ -18,7 +18,7 @@ const CartItem = ({ id }) => {
   const { name, price, quantity } = cartItem;
 
   return (
-    <div key={id} className='CartItem'>
+    <div className='CartItem'>
       <header className='Header'>
         <h2 className='ItemHeader'>{name}</h2>
       </header>

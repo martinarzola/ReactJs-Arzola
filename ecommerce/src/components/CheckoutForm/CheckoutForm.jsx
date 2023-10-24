@@ -7,13 +7,22 @@ const CheckoutForm = ({ onConfirm }) => {
     const [email, setEmail] = useState('')
 
     const handleConfirm = (event) => {
-        event.preventDefault()
-
-        const userData = {
-            name, phone, email
+        event.preventDefault();
+    
+        if (!name || !phone || !email) {
+            alert('Por favor, completa todos los campos obligatorios.')
+            return;
         }
+    
+        const userData = {
+            name,
+            phone,
+            email,
+        };
 
-        onConfirm(userData)
+
+    
+        onConfirm(userData);
     }
 
     return (

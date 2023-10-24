@@ -13,16 +13,23 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const addItem = (item, quantity) => {
-    const existingProductIndex = cart.findIndex((product) => product.id === item.id)
+    // Buscar si el producto ya está en el carrito
+    const existingProduct = cart.find((product) => product.id === item.id);
 
-    if (existingProductIndex !== -1) {
-      const updatedCart = [...cart];
-      updatedCart[existingProductIndex].quantity += quantity;
+    if (existingProduct) {
+      // El producto ya está en el carrito, actualiza la cantidad
+      const updatedCart = cart.map((product) => {
+        if (product.id === item.id) {
+          return { ...product, quantity: product.quantity + quantity };
+        }
+        return product;
+      });
       setCart(updatedCart);
     } else {
+      // El producto no está en el carrito, agrégalo
       setCart((prev) => [...prev, { ...item, quantity }]);
     }
-  }
+  };
 
   const removeItem = (itemId) => {
     const cartUpdated = cart.filter((prod) => prod.id !== itemId);
